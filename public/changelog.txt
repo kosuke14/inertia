@@ -1,3 +1,10 @@
+Inertia (1.6.1); urgency=medium
+
+	* Redesigned UI
+	* BugFixes
+	
+-- Doomcow500 <doomcow500@gmail.com> Thu, 9 Nov 2021 18:00:00 -0000
+
 Inertia (1.6r2); urgency=medium
 
 	* Updated error.html

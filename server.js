@@ -45,8 +45,8 @@ const http = require("http"),
 			}
 
 			for (var i of tlds) {
-				let domain = i
-				let has = i + "/"
+				let domain = i;
+				let has = i + "/";
 
 				if (url.endsWith(domain)) {
 					var google = false;
