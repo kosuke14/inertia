@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-		<link href="/css/modern.css" id="css" rel="stylesheet" />
-		<title>About - Inertia</title>
-		
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-L7FW3WQK3H"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+		<script
+			src="https://kit.fontawesome.com/322a03319d.js"
+			crossorigin="anonymous"
+		></script>
 
-			gtag('config', 'G-L7FW3WQK3H');
-		</script>
+		<title>About - Inertia</title>
+
+		<link href="/css/sleek.css" id="css" rel="stylesheet" />
+		<link rel="icon" id="css" href="/assets/res/favicon.png" />
 	</head>
 
 	<body>
 		<div class="navbar">
 			<a class="left" href="/">Inertia</a>
-			<a href="javascript:void(0)" onClick="settingsOverlay()"
-				>Settings</a
-			>
+			<a href="javascript:void(0)" onClick="settingsOverlay()">
+				Settings
+			</a>
 			<a href="./about.html">About</a>
 			<a href="./changelog.txt">Changelog</a>
 		</div>
@@ -44,8 +41,7 @@
 						<a
 							href="https://github.com/titaniumnetwork-dev/alloy/"
 							target="_black"
-							>Alloy</a
-						>, for the initial framework
+						>Alloy</a>, for the initial framework
 					</li>
 
 					<li>
@@ -53,10 +49,14 @@
 						<a
 							href="mailto:angad.tendulkar@gmail.com"
 							target="_black"
-							>&ltangad.tendulkar@gmail.com&gt</a
-						>, for all improvements and updates since our start.
+							>&ltangad.tendulkar@gmail.com&gt</a>, for all backend improvements and updates since our start.
 					</li>
-
+					
+					<li>
+						<a href="https://doomcow500.github.io">Doomcow500</a>,
+						for frontend updates and designs.
+					</li>
+					
 					<li>
 						The Shaker Coding Club, for all the support they have
 						given me.
@@ -64,9 +64,7 @@
 
 					<li>
 						<a href="https://stackoverflow.com" target="_blank"
-							>StackOverflow,</a
-						>
-						because who <em>doesn't</em> copy-paste code from there.
+							>StackOverflow</a>, because who <em>doesn't</em> copy-paste code from there.
 					</li>
 				</ul>
 			</div>
@@ -78,26 +76,23 @@
 			</span>
 
 			<h1 style="text-indent: 1.75em">Settings</h1>
-
 			<h2>User Interface</h2>
 
 			<img
 				id="uiBoxImg"
-				src="/assets/res/modern.png"
-				onClick="newCss()"
+				src="/assets/res/sleek.png"
+				onClick="oldCss()"
 			/>
-
 			<img
 				id="uiBoxImg"
-				onClick="oldCss()"
-				src="/assets/res/rounded.png"
+				onClick="newCss()"
+				src="/assets/res/boxy.png"
 			/>
 
 			<br />
 
-			<div id="uiBoxText" onClick="oldCss()">Modern</div>
-
-			<div id="uiBoxText" onClick="oldCss()">Rounded</div>
+			<div id="uiBoxText" onClick="oldCss()">Sleek</div>
+			<div id="uiBoxText" onClick="newCss()">Boxy</div>
 		</div>
 
 		<div class="footer">
@@ -106,8 +101,8 @@
 				<a
 					href="https://github.com/TheAlphaReturns/inertia"
 					target="_blank"
-					>GitHub</a
-				>
+					><i class="fab fa-github"></i>GitHub
+				</a>
 			</p>
 		</div>
 

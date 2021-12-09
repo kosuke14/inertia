@@ -26,13 +26,13 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/dragonBall561/unblocked-sites.git"
+		"url": "git+https://github.com/TheAlphaReturns/inertia.git"
 	},
 	"keywords": [],
 	"author": "Angad Tendulkar",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/dragonBall561/unblocked-sites/issues"
+		"url": "https://github.com/TheAlphaReturns/inertia/issues"
 	},
-	"homepage": "https://github.com/dragonBall561/unblocked-sites/blob/main/README.md"
+	"homepage": "https://github.com/TheAlphaReturns/inertia/blob/main/README.md"
 }

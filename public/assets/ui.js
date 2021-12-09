@@ -22,12 +22,20 @@ function getCookie(cname) {
 }
 
 function checkCookie(cname) {
-	let username = getCookie(cname);
-	if (username != "") {
+	let cookie = getCookie(cname);
+	if (cookie != "") {
 		return 1;
 	} else {
 		return 0;
 	}
+}
+
+function changelogOverlay() {
+	document.getElementById("changelogOverlay").style.display = "block";
+}
+
+function disableChangelogOverlay() {
+	document.getElementById("changelogOverlay").style.display = "none";
 }
 
 function settingsOverlay() {
@@ -39,13 +47,13 @@ function disableSettingsOverlay() {
 }
 
 function oldCss() {
-	document.getElementById("css").href = "/css/rounded.css";
+	document.getElementById("css").href = "/css/boxy.css";
 	let cookieSet = checkCookie("ui");
 	if (cookieSet == 0) {
-		setCookie("ui", "rounded", "10000");
+		setCookie("ui", "boxy", "10000");
 	} else {
 		document.cookie = "ui=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-		setCookie("ui", "rounded", "10000");
+		setCookie("ui", "boxy", "10000");
 	}
 }
 
@@ -53,10 +61,10 @@ function newCss() {
 	document.getElementById("css").href = "/css/modern.css";
 	let cookieSet = checkCookie("ui");
 	if (cookieSet == 0) {
-		setCookie("ui", "modern", "10000");
+		setCookie("ui", "sleek", "10000");
 	} else {
 		document.cookie = "ui=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-		setCookie("ui", "modern", "10000");
+		setCookie("ui", "sleek", "10000");
 	}
 }
 
@@ -65,9 +73,9 @@ let cookieIsSet = checkCookie("ui");
 if (cookieIsSet == 0) {
 } else {
 	let ui = getCookie("ui");
-	if (ui == "rounded") {
-		document.getElementById("css").href = "/css/rounded.css";
-	} else if (ui == "modern") {
-		document.getElementById("css").href = "/css/modern.css";
+	if (ui == "sleek") {
+		document.getElementById("css").href = "/css/sleek.css";
+	} else if (ui == "boxy") {
+		document.getElementById("css").href = "/css/boxy.css";
 	}
 }

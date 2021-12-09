@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-		<title>Inertia</title>
-		<link rel="stylesheet" id="css" href="/css/modern.css" />
-		<link rel="icon" id="css" href="/assets/res/favicon.png" />
-		
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-L7FW3WQK3H"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+		<script
+			src="https://kit.fontawesome.com/322a03319d.js"
+			crossorigin="anonymous"
+		></script>
 
-			gtag('config', 'G-L7FW3WQK3H');
-		</script>
+		<title>Inertia</title>
+
+		<link rel="stylesheet" id="css" href="/css/sleek.css" />
+		<link rel="icon" id="css" href="/assets/res/favicon.png" />
 	</head>
 
 	<body>
 		<div class="navbar">
-			<a class="left" href="/">Inertia</a>
-			<a href="javascript:void(0)" onClick="settingsOverlay()"
-				>Settings</a
-			>
+			<a class="left">Inertia</a>
+			<a href="javascript:void(0)" onClick="settingsOverlay()">
+				Settings
+			</a>
 			<a href="./about.html">About</a>
 			<a href="./changelog.txt">Changelog</a>
 		</div>
@@ -29,10 +25,14 @@
 		<div class="wrapper">
 			<header>
 				<div id="intro">
-					Welcome to Inertia Unblocker!
+					Welcome to the Inertia Unblocker!
 					<br />Check the
-					<a href="https://discord.gg/r28EPhaMSx">Discord</a> for the
-					new URL if this website gets blocked.
+
+					<a href="https://discord.gg/r28EPhaMSx"
+						><i class="fab fa-discord"></i>Discord
+					</a>
+
+					for the new URL if this website gets blocked.
 					<!-- No Discord Yet lol -->
 					<br />By using this site, you agree to Cookies, for Google
 					Analytics and Theme
@@ -59,32 +59,26 @@
 			</span>
 
 			<h1 style="text-indent: 1.75em">Settings</h1>
-
 			<h2>User Interface</h2>
 
-			<img
-				id="uiBoxImg"
-				src="/assets/res/modern.png"
-				onClick="newCss()"
-			/>
-
-			<img
-				id="uiBoxImg"
-				onClick="oldCss()"
-				src="/assets/res/rounded.png"
-			/>
+			<img id="uiBoxImg" onClick="oldCss()" src="/assets/res/sleek.png" />
+			<img id="uiBoxImg" src="/assets/res/boxy.png" onClick="newCss()" />
 
 			<br />
 
-			<div id="uiBoxText" onClick="oldCss()">Modern</div>
-
-			<div id="uiBoxText" onClick="oldCss()">Rounded</div>
+			<div id="uiBoxText" onClick="oldCss()">Sleek</div>
+			<div id="uiBoxText" onClick="newCss()">Boxy</div>
 		</div>
 
 		<div class="footer">
 			<p>
 				Fork and PR on
-				<a href="https://github.com/TheAlphaReturns/inertia">GitHub</a>
+				<a
+					style="font-size: 17px; font-weight: 400"
+					href="https://github.com/TheAlphaReturns/inertia"
+				>
+					<i class="fab fa-github"></i> GitHub
+				</a>
 			</p>
 		</div>
 
