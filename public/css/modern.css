@@ -2,12 +2,12 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 :root {
-	--accents: #202124;
-	--backgrounds: #202124;
+	--accents: #353535;
+	--backgrounds: #353535;
 	--navbg: #303134;
-	--textcolor: white;
+	--textcolor: whitesmoke;
 	--outlines: #27282b;
-	--hovers: #3c4043;
+	--hovers: #353535;
 }
 
 * {
@@ -21,7 +21,11 @@
 body {
 	margin: 0;
 	padding: 0;
-	background: var(--backgrounds);
+	/*background: var(--backgrounds);*/
+	background-image: url("/assets/res/background.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 	color: var(--textcolor);
 	font-family: Product Sans;
 	font-weight: 400;
@@ -36,6 +40,7 @@ h2 {
 .wrapper {
 	width: 100%;
 	padding: 50px;
+	opacity: 0.85;
 	position: absolute;
 	display: flex;
 	flex: 1;
@@ -43,6 +48,15 @@ h2 {
 	flex-direction: column;
 	justify-content: center;
 }
+
+a:visited {
+	color: whitesmoke;
+  }
+
+a:link {
+	color: gainsboro
+}
+
 
 header {
 	display: block;
@@ -77,6 +91,14 @@ header #github i {
 	border: solid 2px var(--outlines);
 }
 
+.form button:focus {
+	border: solid 1.2px rgb(255, 255, 255);
+}
+
+.form input:focus {
+	border: solid 1.2px rgb(255, 255, 255);
+}
+
 .form input {
 	width: calc(100% - 154px);
 	height: 50px;
@@ -104,9 +126,14 @@ header #github i {
 	outline: none;
 }
 
+.briwhi {
+	opacity: 1;
+}
+
 .navbar {
 	background-color: var(--navbg);
 	overflow: hidden;
+	opacity: 0.55;
 	width: 100%;
 	float: center;
 	text-align: center;
@@ -139,6 +166,7 @@ header #github i {
 .footer {
 	position: fixed;
 	bottom: 0;
+	opacity: 0.55;
 	width: 100%;
 	background-color: var(--navbg);
 	color: white;

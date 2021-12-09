@@ -30,6 +30,14 @@ function checkCookie(cname) {
 	}
 }
 
+function changelogOverlay() {
+	document.getElementById("changelogOverlay").style.display = "block";
+}
+
+function disableChangelogOverlay() {
+	document.getElementById("changelogOverlay").style.display = "none";
+}
+
 function settingsOverlay() {
 	document.getElementById("settingsOverlay").style.display = "block";
 }

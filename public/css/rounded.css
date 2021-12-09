@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Product+Sans");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
+:root {
+	--textcolor: whitesmoke;
+	--bgc: #282829
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -8,7 +13,11 @@
 body {
 	margin: 0;
 	padding: 0;
-	background: #060809;
+	/*background: #060809;*/
+	background-image: url("/assets/res/background.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 	color: #fff;
 	font-family: Product Sans;
 	font-weight: 400;
@@ -23,12 +32,21 @@ h2 {
 .wrapper {
 	width: 100%;
 	padding: 50px;
+	opacity: 0.85;
 	position: absolute;
 	display: flex;
 	flex: 1;
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
+}
+
+a:visited {
+	color: whitesmoke;
+  }
+
+a:link {
+	color: gainsboro
 }
 
 header {
@@ -40,7 +58,7 @@ header {
 	margin: 5px 0px;
 	width: 1079px;
 	padding: 15px 15px;
-	background: #0b0d0f;
+	/*background: var(--accents);*/
 }
 
 header #intro {
@@ -67,7 +85,7 @@ header #github i {
 
 .container {
 	width: 1079px;
-	background: #0b0d0f;
+	/*background: var(--accents);*/
 	padding: 25px;
 	margin: 5px 0px;
 	text-align: left;
@@ -113,9 +131,10 @@ header #github i {
 }
 
 .navbar {
-	background-color: #141819;
+	/*background-color: var(--navbg);*/
 	overflow: hidden;
 	width: 98%;
+	opacity: 0.55;
 	float: center;
 	text-align: center;
 	margin: auto;
@@ -125,7 +144,7 @@ header #github i {
 
 .navbar a {
 	float: right;
-	color: #f2f2f2;
+	color: var(--textcolor);
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -133,7 +152,7 @@ header #github i {
 }
 
 .navbar a:hover {
-	background-color: #191e20;
+	/*background-color: var(--hovers);*/
 	color: white;
 }
 
@@ -155,9 +174,10 @@ header #github i {
 	position: fixed;
 	left: 0;
 	bottom: 0;
+	opacity: 0.75;
 	width: 98%;
 	margin: 0% 1%;
-	background-color: #141819;
+	/*background-color: var(--navbg);*/
 	color: white;
 	text-align: center;
 	border-radius: 35px 35px 0px 0px;
@@ -173,8 +193,9 @@ header #github i {
 	right: 15%;
 	bottom: 15%;
 	border-radius: 25px;
-	background-color: #18191a; /* Black background with opacity */
+	background-color: var(--bgc); /* Black background with opacity */
 	z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+	opacity: 1.2;
 }
 
 .settingsOverlay span {
@@ -186,21 +207,21 @@ header #github i {
 	text-align: right;
 	float: right;
 	font-size: 40px;
-	border-radius: 25px;
+	border-radius: 12px;
 	cursor: pointer;
 }
 
 .settingsOverlay span:hover {
-	background-color: #191e20;
+	background-color: var(--bgc);
 	color: white;
-	border-radius: 25px;
+	border-radius: 12px;
 }
 
 #uiBoxImg {
 	display: inline-block;
 	width: 350px;
 	height: 160px;
-	border-radius: 25px 25px 0px 0px;
+	border-radius: 12px 12px 0px 0px;
 	margin-left: 30px;
 	margin-right: 30px;
 	text-decoration: none;
@@ -211,8 +232,8 @@ header #github i {
 	display: inline-block;
 	width: 350px;
 	height: 35px;
-	background-color: #2b2c2e;
-	border-radius: 0px 0px 25px 25px;
+	background-color: #353535;
+	border-radius: 0px 0px 12px 12px;
 	margin-left: 30px;
 	margin-right: 30px;
 	padding-top: 4.5px;
