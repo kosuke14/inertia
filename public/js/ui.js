@@ -58,7 +58,7 @@ function oldCss() {
 }
 
 function newCss() {
-	document.getElementById("css").href = "/css/modern.css";
+	document.getElementById("css").href = "/css/sleek.css";
 	let cookieSet = checkCookie("ui");
 	if (cookieSet == 0) {
 		setCookie("ui", "sleek", "10000");

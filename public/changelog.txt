@@ -1,9 +1,15 @@
+Inertia (1.6.1r1); urgency=medium
+
+	* BugFixes
+	
+-- Angad Tendulkar <angad.tendulkar@gmail.com> Thu, 9 Dec 2021 21:40:00 -0500
+
 Inertia (1.6.1); urgency=medium
 
 	* Redesigned UI
 	* BugFixes
 	
--- Doomcow500 <doomcow500@gmail.com> Thu, 9 Nov 2021 18:00:00 -0000
+-- Doomcow500 <doomcow500@gmail.com> Thu, 9 Dec 2021 18:00:00 -0000
 
 Inertia (1.6r2); urgency=medium
 
