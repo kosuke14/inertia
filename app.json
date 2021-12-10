@@ -1,7 +1,26 @@
 {
-	"name": "inertia",
-	"description": "A small webproxy based on Alloy by TitaniumNetworkDev",
-	"repository": "https://github.com/dragonBall561/unblocked-sites/",
-	"logo": "https://avatars.githubusercontent.com/u/47227492?s=200&v=4",
-	"keywords": ["proxy", "web-unblocker", "internet", "inertia"]
+    "name": "Umami",
+    "description": "Umami is a simple, fast, website analytics alternative to Google Analytics.",
+    "keywords": [
+      "analytics",
+      "charts",
+      "statistics",
+      "web-analytics"
+    ],
+    "website": "https://umami.is",
+    "repository": "https://github.com/mikecao/umami",
+    "addons": [
+      "heroku-postgresql"
+    ],
+    "env": {
+      "HASH_SALT": {
+        "description": "Used to generate unique values for your installation",
+        "required": true,
+        "generator": "secret"
+      }
+    },
+    "scripts": {
+      "postdeploy": "psql $DATABASE_URL -f sql/schema.postgresql.sql"
+    },
+    "success_url": "/"
 }
